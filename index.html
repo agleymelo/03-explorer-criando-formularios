@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="app">
       <header>
@@ -61,11 +62,6 @@
               <label for="mentor-name">Mentor's name <span>(First name only)</span></label>
               <input type="text" id="mentor-name" />
             </div>
-
-            <div class="input-wrapper">
-              <label for="name">Name</label>
-              <input type="text" id="name" />
-            </div>
           </div>
         </fieldset>
 
@@ -73,14 +69,46 @@
           <div class="fieldset-wrapper">
             <legend>Your available times</legend>
 
-            <div class="input-wrapper">
-              <label for="mentor-name">Mentor's name <span>(First name only)</span></label>
-              <input type="text" id="mentor-name" />
+            <h3>First Mentoring</h3>
+
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="first-mentoring-date">Date <span>(MM/DD/AAAA)</span></label>
+                <input type="date" id="first-mentoring-date" />
+              </div>
+
+              <div class="input-wrapper-times">
+                <div class="input-wrapper">
+                  <label for="first-mentoring-time-begin">Begin</label>
+                  <input type="time" id="first-mentoring-time-begin" />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="first-mentoring-time-End">End</label>
+                  <input type="time" id="first-mentoring-time-End" />
+                </div>
+              </div>
             </div>
 
-            <div class="input-wrapper">
-              <label for="name">Name</label>
-              <input type="text" id="name" />
+            <h3>Second Mentoring</h3>
+
+            <div class="col-3">
+              <div class="input-wrapper">
+                <label for="first-mentoring-date">Date <span>(MM/DD/AAAA)</span></label>
+                <input type="date" id="first-mentoring-date" />
+              </div>
+
+              <div class="input-wrapper-times">
+                <div class="input-wrapper">
+                  <label for="first-mentoring-time-begin">Begin</label>
+                  <input type="time" id="first-mentoring-time-begin" />
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="first-mentoring-time-End">End</label>
+                  <input type="time" id="first-mentoring-time-End" />
+                </div>
+              </div>
             </div>
           </div>
         </fieldset>
