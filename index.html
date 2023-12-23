@@ -2,10 +2,93 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <title>Mentoring</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="app">
+      <header>
+        <h1>Mentoring</h1>
+        <p>Fill out form bellow to schedule your mentoring</p>
+      </header>
+
+      <form id="form">
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Personal information</legend>
+
+            <div class="col-2">
+              <div class="input-wrapper">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" />
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="email">E-mail <span>(Enter a valid email address)</span></label>
+              <input type="email" id="email" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="password">Password <span>(Minimum 6 characters)</span></label>
+              <input type="password" id="password" />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Mentor information</legend>
+
+            <div class="input-wrapper">
+              <label for="mentor-name">Mentor's name <span>(First name only)</span></label>
+              <input type="text" id="mentor-name" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="name">Name</label>
+              <input type="text" id="name" />
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Your available times</legend>
+
+            <div class="input-wrapper">
+              <label for="mentor-name">Mentor's name <span>(First name only)</span></label>
+              <input type="text" id="mentor-name" />
+            </div>
+
+            <div class="input-wrapper">
+              <label for="name">Name</label>
+              <input type="text" id="name" />
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+      <footer>
+        <button class="button" type="submit" form="form">Save</button>
+      </footer>
+    </div>
+  </body>
 </html>
